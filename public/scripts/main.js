@@ -4,8 +4,8 @@ function handleSend() {
     toastr["success"]("message", "title");
 }
 
-function handleNewConnection() {
-    toastr["info"]("message", "title")
+function handleNewConnection(username) {
+    toastr["info"](username, "Пользователь подключен")
 }
 
 function playSound(filename){
@@ -14,3 +14,6 @@ function playSound(filename){
     var embedSource = '<embed hidden="true" autostart="true" loop="false" src="' + filename +'.mp3">';
     document.getElementById("sound").innerHTML='<audio autoplay="autoplay">' + mp3Source + oggSource + embedSource + '</audio>';
   }
+
+  // playSound("plucky");
+    // new Audio('assets/conn.mp3').play()
