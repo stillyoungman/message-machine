@@ -3,25 +3,30 @@
 <head>
     <title>It's a messageMachine</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel='stylesheet' href='css/board.css'>
 </head>
 
 <body>
 
     <div class="area content">
-        
+
     </div>
 
     <div class="box bottom content">
         <form class="clear">
             <div class="field has-addons">
-                    <input class="input">
-                    <button class="button is-success">
-                        Отправить
-                    </button>
+                <input class="input">
+                <button id="send" class="button is-success" onclick="handleSend()">
+                    Отправить
+                </button>
             </div>
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
