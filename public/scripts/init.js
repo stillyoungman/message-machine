@@ -19,3 +19,11 @@ toastr.options = {
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
 }
+
+//set board size
+setTimeout(()=>{
+    let height = window.innerHeight - 200;
+    let b = document.getElementById('board');
+    b.setAttribute("style", `max-height:${height};`);
+    b.classList.remove("invis");
+},100);
