@@ -1,7 +1,24 @@
 'use strict'
 
-function handleSend() {
-    toastr["success"]("message", "title");
+
+// ion.sound({
+//     sounds: [
+//         {name: "plucky"},
+//         {name: "kbClick"}
+//     ],
+
+//     // main config
+//     path: "assets/",
+//     preload: true,
+//     multiplay: true,
+//     volume: 0.9
+// });
+
+
+function handleNewMessage(message) {
+    toastr["success"](undefined, "Новое сообщение");
+    messageSound.play();
+    // ion.sound.play("plucky");
 }
 
 function handleNewConnection(username) {

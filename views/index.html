@@ -1,38 +1,34 @@
 <html>
-
 <head>
     <title>It's a messageMachine</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.css'>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <link rel='stylesheet' href='css/board.css'>
     <link rel='stylesheet' href='css/all.css'>
-
 </head>
-
 <body>
     <div id="board" class="area content invis">
-        
     </div>
-
-    <div class="box bottom content">
+    <div id="send-box" class="box bottom content">
         <form class="clear">
             <div class="field has-addons">
-                <input class="input">
-                <button id="send" class="button is-success" onclick="handleSend()">
+                <input id="m" class="input">
+                <button id="send" class="button is-success">
                     Отправить
                 </button>
             </div>
         </form>
         <div id="sound"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/ion.sound.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="scripts/init.js"></script>
     <script src="scripts/main.js"></script>
-
+    
 </body>
-
 </html>

@@ -23,9 +23,10 @@
 .mess {
     font-family: 'PT Sans', sans-serif;
     width: max-content;
+    width: -moz-fit-content;
     max-width: 30%;
     padding: 10px 10px 6px 10px;
-    margin:8px;
+    margin:5px;
     border-radius: 30% 20% / 10% 40%;
     color:#2c3e50;
     background: #D6EAF8;
